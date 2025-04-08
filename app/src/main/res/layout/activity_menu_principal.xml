@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PetFinder"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnPerdiPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perdi um Pet"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnEncontreiPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encontrei um Pet"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>
