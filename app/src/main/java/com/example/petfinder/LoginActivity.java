@@ -31,7 +31,11 @@ public class LoginActivity extends AppCompatActivity {
             String senha = editSenha.getText().toString();
             if(email.equals("teste@email.com") && senha.equals("123456")) {
                 Toast.makeText(this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show();
-                // Ir para próxima activity
+                // Ir para o Menu Principal
+                Intent intent = new Intent(this, MainActivity.class);
+                intent.putExtra("FROM_LOGIN", true);
+                startActivity(intent);
+                finish();
             } else {
                 Toast.makeText(this, "Email ou senha incorretos", Toast.LENGTH_SHORT).show();
             }
